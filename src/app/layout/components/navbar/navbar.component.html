@@ -1,14 +1,24 @@
-<nav class="container absolute top-0 max-w-full h-14 px-8">
+<nav class="container max-w-full absolute top-0 h-14 px-4 md:px-8 lg:px-32">
   <div class="flex justify-between items-center h-full">
     <div class="text-2xl font-bold">Rahadur R.</div>
 
-    <ul class="space-x-4 hidden md:flex">
+    <ul class="space-x-4 hidden md:flex items-center">
       <li *ngFor="let link of links">
         <a [routerLink]="link.url"
            class="hover:text-blue-500 hover:border-b-2">
           {{ link.text }}
         </a>
       </li>
+      <li>
+        <button class="bg-amber-300 py-1 px-2 rounded hover:bg-amber-400">
+          <span class="font-medium">HIRE ME</span>
+        </button>
+      </li>
     </ul>
+    <div class="md:hidden">
+      <button>
+        <svg-icon key="menu" fontSize="22px"></svg-icon>
+      </button>
+    </div>
   </div>
 </nav>
