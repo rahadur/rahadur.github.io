@@ -5,19 +5,19 @@
     <ul class="space-x-4 hidden md:flex items-center">
       <li *ngFor="let link of links">
         <a [routerLink]="link.url"
-           class="hover:text-blue-500 hover:border-b-2">
+           class="hover:text-blue-500 hover:border-b-2 font-medium">
           {{ link.text }}
         </a>
       </li>
       <li>
         <button class="bg-amber-300 py-1 px-2 rounded hover:bg-amber-400">
-          <span class="font-medium">HIRE ME</span>
+          <span class="font-semibold">HIRE NOW</span>
         </button>
       </li>
     </ul>
     <div class="md:hidden">
       <button>
-        <svg-icon key="menu" fontSize="22px"></svg-icon>
+        <svg-icon key="menu" fontSize="28px"></svg-icon>
       </button>
     </div>
   </div>

@@ -1,15 +1,32 @@
 <div class="-mt-14 -mx-4 md:-mx-9 lg:-mx-32 pt-14 min-h-[550px] md:min-h-[400px] bg-blue-50">
-  <div class="h-full mt-10">
+  <div class="h-full mt-10 md:mt-0">
 
     <div class="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-8 lg:mx-32 justify-items-center items-center">
       <div class="order-2 md:order-1 space-y-2 my-8">
-        <h1 class="text-6xl font-light">Hello I'm</h1>
-        <h1 class="text-6xl lg:font-7xl font-black">Rahadur R.</h1>
-        <h1 class="text-2xl font-light">Senior Software Engineer</h1>
+        <div class="mb-4">
+          <h1 class="text-6xl font-light">Hello I'm</h1>
+          <h1 class="text-6xl lg:font-7xl font-black">Rahadur R.</h1>
+          <h1 class="text-2xl font-light mt-3">Senior Software Engineer</h1>
 
-        <button class="bg-amber-300 py-1 px-2 rounded hover:bg-amber-400">
-          <span class="font-medium uppercase">Hire Now</span>
-        </button>
+          <button class="bg-amber-300 py-1 px-2 rounded hover:bg-amber-400 mt-3">
+            <span class="font-medium uppercase">Hire Now</span>
+          </button>
+        </div>
+
+        <div class="flex items-center space-x-6">
+          <button (click)="openSocialLink('linkedin')">
+            <svg-icon key="linkedin" fontSize="28px" color="#0277B5" />
+          </button>
+
+          <button (click)="openSocialLink('github')">
+            <svg-icon key="github" fontSize="28px" />
+          </button>
+
+          <button (click)="openSocialLink('stackoverflow')">
+            <svg-icon key="stackoverflow" fontSize="28px" color="#E87F35" />
+          </button>
+        </div>
+
       </div>
 
       <div class="order-1 md:order-2">
